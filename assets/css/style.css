@@ -351,7 +351,7 @@ body {
 .header-actions {
   display: flex;
   gap: 15px;
-  margin-right: 300px;
+  margin-right: 100px;
 }
 
 .header .action-btn {
@@ -399,7 +399,7 @@ body {
 .navbar-link {
   color: var(--eerie-black);
   font-size: var(--fs-6);
-  padding: 10px 15px;
+  padding: 20px 25px;
 }
 
 .navbar-action-btn {
@@ -975,7 +975,7 @@ margin-bottom: 30px;
 
   .logo { 
     font-size: 3.8rem;
-    margin-left: 300px;
+    margin-left: 100px;
   }
 
   .navbar,
