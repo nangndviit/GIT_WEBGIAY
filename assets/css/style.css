@@ -138,6 +138,7 @@ html {
 body {
   background-color: var(--white);
   color: var(--black);
+  font-family: 'Roboto', sans-serif;
   font-size: 1.6rem;
   line-height: 1.5;
 }
@@ -211,11 +212,18 @@ body {
   color: var(--portland-orange);
 }
 
+/* .img-holder-brand{
+  width: 1024px;
+  height: 450px;
+} */
+
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
   background-color: var(--light-gray);
   overflow: hidden;
 }
+
+
 
 .img-cover {
   width: 100%;
@@ -226,11 +234,11 @@ body {
 .has-scrollbar {
   display: flex;
   align-items: center;
-  gap: 30px;
+  gap: 10px;
   overflow-x: auto;
   scroll-snap-type: inline mandatory;
   padding-block-end: 20px;
-  margin-block-end: -20px;
+  margin-top: 10px;
 }
 
 .scrollbar-item {
@@ -342,7 +350,7 @@ body {
 .header .container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 40px;
 }
 
@@ -365,7 +373,7 @@ body {
 .header-actions {
   display: flex;
   gap: 15px;
-  margin-right: 50px;
+  /* margin-right: 50px; */
 }
 
 .header .action-btn {
@@ -395,7 +403,7 @@ body {
   top: 85px;
   left: -320px;
   bottom: 0;
-  background-color: red;
+  background-color: white;
   max-width: 320px;
   width: 100%;
   padding: 10px 10px;
@@ -411,10 +419,12 @@ body {
 }
 
 .navbar-link {
-  color: var(--eerie-black);
-  font-size: var(--fs-6);
-  padding: 0px 15px;
+  color: black;
+  font-size: 16px;
+  padding: 10px 15px;
 }
+
+
 
 .navbar-action-btn {
   position: absolute;
@@ -432,27 +442,45 @@ body {
 
 /* hãng sản phẩm */
 .but {
-  width: 200px;
+  width: 200px; /* Nút chiếm toàn bộ chiều rộng của container cha */
   height: 100px;
   background-color: black;
   color: white;
   border-radius: 10px;
-  padding: 40px;
+  padding: 20px; /* Kích thước padding để tạo khoảng trắng trong nút */
   text-align: center;
+  line-height: 80px;
+  justify-content: center;
   margin: 10px;
   margin-bottom: 20px;
   font-size: 16px;
+  box-sizing: border-box; /* Thêm box-sizing để padding không tăng kích thước của phần tử */
 }
+
 .wrapper div {
   display: flex;
-  max-width: 100%;
-  margin-bottom: 10px;
+  flex-wrap: nowrap; /* Ngăn chặn các nút xuống dòng */
   justify-content: center;
   border-bottom: 1px solid rgb(223, 222, 222);
 }
 
 
 
+/* HERO */
+
+.hero {
+  margin-block-start: 85px;
+  min-height: 360px;
+  background-position: left;
+  text-align: center;
+}
+
+.hero-title .span { font-size: 0.5em; }
+
+.hero-text {
+  color: var(--white);
+  margin-block: 15px 25px;
+}
 
 .hero .btn { margin-inline: auto; }
 
@@ -460,12 +488,36 @@ body {
 
 
 
+/* OFFERS */
+
+.offer-card {
+  border-radius: var(--radius-10);
+  padding: 20px;
+  display: grid;
+  align-content: center;
+}
+
+.offer-card .card-subtitle {
+  font-size: var(--fs-7);
+  text-transform: uppercase;
+  font-weight: var(--fw-700);
+}
+
+.offer-card .card-title {
+  color: var(--black);
+  margin-block: 5px 24px;
+}
+
+.offer-card .btn { background-color: var(--portland-orange); }
+
+.offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
+
+
 /*-----------------------------------*\
   #PRODUCT
 \*-----------------------------------*/
 
 .product{
-  margin: 10px;
   width: 100%;
   justify-items: center;
   border-bottom: 1px solid rgb(207, 206, 206);
@@ -474,8 +526,7 @@ body {
 .product-card .card-action-btn { display: none; }
 
 .product-card { 
-  margin-left: 10px;
-  margin-right: 10px; 
+  margin: 10px;
 }
 
 .product-card .card-banner {
@@ -490,6 +541,10 @@ body {
   margin-top: 20px;
 }
 
+.card-content a{
+  font-size: 15px;
+}
+
 
 /*-----------------------------------*\
   #BRAND
@@ -501,16 +556,28 @@ body {
 
 .brand .scrollbar-item { min-width: 50%; }
 
-.brand .scrollbar-item:not(:last-child) { border-inline-end: 1px solid var(--platinum); }
 
 .brand-card {
-  width: 100%;
-  height: 150px;
+  max-width: 100%;
+  height: 120px;
   margin-inline: auto;
 }
 
 .thanhp {
-margin-bottom: 30px;
+margin-bottom: 10px;
+}
+
+.scrollbar-item{
+  max-width: 100%; 
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.scrollbar-item img{
+  max-width: 100%; 
+  height: auto; 
+  margin: 10px; 
 }
 
 
@@ -539,6 +606,11 @@ margin-bottom: 30px;
   gap: 20px;
 }
 
+.footer-brand,
+.footer-list {
+    flex: 0 0 48%; /* Chia đều không gian cho các phần tử trong container */
+    margin-bottom: 20px;
+}
 .footer .logo {
   color: var(--black);
   margin-block-end: 10px;
@@ -614,6 +686,47 @@ margin-bottom: 30px;
   max-width: max-content;
 }
 
+/* SERVICE */
+
+.service .img {
+  margin-inline: auto;
+  margin-block-end: 30px;
+}
+
+.service .section-title { margin-block-end: 60px; }
+
+.service-card { text-align: center; }
+
+.service-card .card-icon {
+  max-width: max-content;
+  margin-inline: auto;
+}
+
+.service-card .card-title { margin-block: 10px; }
+
+.service-card .card-text { color: var(--spanish-gray); }
+
+
+
+/* CTA */
+
+.cta { background-position: 75%; }
+
+.cta-banner { display: none; }
+
+.cta-content { padding-block: 80px var(--section-padding); }
+
+.cta .section-title {
+  text-align: left;
+  margin-block: 10px 20px;
+}
+
+.cta .section-text { margin-block-end: 30px; }
+
+.cta .btn:is(:hover, :focus) {
+  background-color: var(--white);
+  color: var(--black);
+}
 
 
 
@@ -695,9 +808,10 @@ margin-bottom: 30px;
     align-items: center;
   }
 
-  
-
-
+  .but{
+    font-size: 14px; 
+    padding: 5px; 
+  }
 
   /**
    * OFFER
@@ -718,8 +832,8 @@ margin-bottom: 30px;
   }
 
   .product-card .card-banner .hover {
-    top: 15px;
-    left: 15px;
+    top: 0;
+    left: 0;
   }
 
   .product-card:is(:hover, :focus-within) .default,
@@ -765,7 +879,7 @@ margin-bottom: 30px;
    * BRAND
    */
 
-  .brand .scrollbar-item { min-width: 10%;  }
+  .brand .scrollbar-item { min-width: 1%;  }
 
 
 
@@ -773,14 +887,12 @@ margin-bottom: 30px;
    * FOOTER
    */
 
-   .footer-bottom .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-  }
+   .footer-brand,
+    .footer-list {
+      flex: 0 0 100%; 
+    }
+
 }
-
-
 
 
 
@@ -812,7 +924,7 @@ margin-bottom: 30px;
    * REUSED STYLE
    */
 
-  .scrollbar-item { min-width: calc(33.33% - 20px); }
+  .scrollbar-item { min-width: calc(20% - 20px); }
 
   .grid-list { grid-template-columns: repeat(3, 1fr); }
 
@@ -904,7 +1016,7 @@ margin-bottom: 30px;
 
   .container { padding-inline: 30px; }
 
-  .scrollbar-item { min-width: calc(20% - 24px); }
+  .scrollbar-item { min-width: calc(22.2% - 24px); }
 
 
 
@@ -916,8 +1028,10 @@ margin-bottom: 30px;
   .navbar-action-btn { display: none; }
 
   .header {
-    --color: var(--white);
+    --color: var(--black);
     background: none;
+    width: 100%;
+    height: 100px;
   }
 
   .header.active {
@@ -932,26 +1046,26 @@ margin-bottom: 30px;
 
   .logo { 
     font-size: 3.8rem;
-    margin-left: 100px;
   }
 
   .navbar,
   .navbar.active {
     all: unset;
     margin-inline-end: auto;
+    white-space: nowrap;
   }
 
   .navbar-list {
     display: flex;
-    gap: 30px;
-    font-size: 20px;
-    margin-left: 100px;
+    overflow: hidden;
+    font-size: 16px;
+    font-weight: 300px;
   }
 
   .navbar-link {
-    color: var(--color);
-    --fs-6: 1.7rem;
-    font-weight: var(--fw-700);
+    font-size: 16px;
+    color: #000;
+    padding: 0px 15px;
     transition: var(--transition-1);
   }
 
@@ -991,7 +1105,7 @@ margin-bottom: 30px;
    * BRAND
    */
 
-  .brand .scrollbar-item { min-width: 20%; }
+  .brand .scrollbar-item { min-width: 15%; }
 
 
 
@@ -1059,5 +1173,3 @@ margin-bottom: 30px;
   .footer { padding-block-start: 40px; }
 
 }
-
-
