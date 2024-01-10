@@ -87,20 +87,35 @@
   box-sizing: border-box;
 }
 
+
 li { 
+  margin-left: 5px;
   list-style: none;
-  margin: -12px; 
 }
 
-a,
 img,
 span,
 button,
 ion-icon { display: block; }
 
 a {
+  display: block;
   color: inherit;
+  font-weight: normal;
+  font-family: Roboto, sans-serif;
   text-decoration: none;
+
+}
+
+i{
+  margin-left: 10px
+}
+
+h4{
+  margin-left: 5px;
+}
+p{
+  margin-left: 5px;
 }
 
 button {
@@ -125,7 +140,6 @@ body {
   color: var(--black);
   font-size: 1.6rem;
   line-height: 1.5;
-
 }
 
 
@@ -351,7 +365,7 @@ body {
 .header-actions {
   display: flex;
   gap: 15px;
-  margin-right: 100px;
+  margin-right: 50px;
 }
 
 .header .action-btn {
@@ -381,10 +395,10 @@ body {
   top: 85px;
   left: -320px;
   bottom: 0;
-  background-color: var(--white);
+  background-color: red;
   max-width: 320px;
   width: 100%;
-  padding: 20px 10px;
+  padding: 10px 10px;
   box-shadow: var(--shadow-2);
   transition: 0.25s var(--cubic-out);
   overflow-x: hidden;
@@ -399,7 +413,7 @@ body {
 .navbar-link {
   color: var(--eerie-black);
   font-size: var(--fs-6);
-  padding: 20px 25px;
+  padding: 0px 15px;
 }
 
 .navbar-action-btn {
@@ -409,7 +423,7 @@ body {
   right: 0;
   padding: 15px;
   background-color: var(--sonic-silver);
-  color: var(--white);
+  color: var(--black);
   font-weight: var(--fw-700);
   text-transform: uppercase;
   text-align: center;
@@ -439,49 +453,10 @@ body {
 
 
 
-/*-----------------------------------*\
-  #HERO
-\*-----------------------------------*/
-
-.hero {
-  margin-block-start: 85px;
-  min-height: 360px;
-  background-position: left;
-  text-align: center;
-}
-
 
 .hero .btn { margin-inline: auto; }
 
 .hero .btn:is(:hover, :focus) { background-color: var(--portland-orange); }
-
-
-/*-----------------------------------*\
-  #OFFERS
-\*-----------------------------------*/
-
-.offer-card {
-  border-radius: var(--radius-10);
-  padding: 20px;
-  display: grid;
-  align-content: center;
-}
-
-.offer-card .card-subtitle {
-  font-size: var(--fs-7);
-  text-transform: uppercase;
-  font-weight: var(--fw-700);
-}
-
-.offer-card .card-title {
-  color: var(--black);
-  margin-block: 5px 24px;
-}
-
-.offer-card .btn { background-color: var(--portland-orange); }
-
-.offer-card .btn:is(:hover, :focus) { background-color: var(--black); }
-
 
 
 
@@ -491,48 +466,29 @@ body {
 
 .product{
   margin: 10px;
+  width: 100%;
+  justify-items: center;
   border-bottom: 1px solid rgb(207, 206, 206);
 }
 .product .img-cover.hover,
 .product-card .card-action-btn { display: none; }
 
-.product-card { text-align: left;  }
+.product-card { 
+  margin-left: 10px;
+  margin-right: 10px; 
+}
 
 .product-card .card-banner {
   border: 1px solid var(--platinum);
   border-radius: var(--radius-10);
   margin-block-end: 5px;
+  margin: -10px;
 }
 
 
-
-
-
-
-
-/*-----------------------------------*\
-  #SERVICE
-\*-----------------------------------*/
-
-.service .img {
-  margin-inline: auto;
-  margin-block-end: 30px;
+.card-content{
+  margin-top: 20px;
 }
-
-.service .section-title { margin-block-end: 60px; }
-
-.service-card { text-align: center; }
-
-.service-card .card-icon {
-  max-width: max-content;
-  margin-inline: auto;
-}
-
-.service-card .card-title { margin-block: 10px; }
-
-.service-card .card-text { color: var(--spanish-gray); }
-
-
 
 
 /*-----------------------------------*\
@@ -548,7 +504,8 @@ body {
 .brand .scrollbar-item:not(:last-child) { border-inline-end: 1px solid var(--platinum); }
 
 .brand-card {
-  max-width: max-content;
+  width: 100%;
+  height: 150px;
   margin-inline: auto;
 }
 
@@ -971,7 +928,7 @@ margin-bottom: 30px;
   .header .logo,
   .header .action-btn { color: var(--color); }
 
-  .header .action-btn.user { display: block; }
+  .header .action-btn.user { display: flex; }
 
   .logo { 
     font-size: 3.8rem;
