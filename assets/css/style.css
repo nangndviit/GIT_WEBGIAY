@@ -530,7 +530,7 @@ body {
   border: 1px solid var(--platinum);
   border-radius: var(--radius-10);
   margin-block-end: 5px;
-  margin: -10px;
+  margin: -15px;
 }
 
 .card-content{
