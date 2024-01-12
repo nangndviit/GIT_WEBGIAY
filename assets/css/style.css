@@ -586,15 +586,6 @@ body {
   margin: -15px;
 }
 
-.card-action {
-  right: 10px;
-  position: absolute;
-  bottom: 10px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
 .card-content {
   margin-top: 10px;
   width: 100%;
@@ -615,6 +606,8 @@ body {
 .heart-icon {
   width: 30px;
   height: 30px;
+  margin-top: -40px;
+  margin-left: 22px;
   clip-path: polygon(100% 50%,
       50% 100%,
     );
