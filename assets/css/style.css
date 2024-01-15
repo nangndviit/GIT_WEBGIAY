@@ -131,10 +131,6 @@ ion-icon {
   pointer-events: none;
 }
 
-address {
-  font-style: normal;
-}
-
 html {
   font-family: var(--ff-nunito_sans);
   font-size: 10px;
@@ -399,7 +395,6 @@ body {
 .header-actions {
   display: flex;
   gap: 15px;
-  /* margin-right: 50px; */
 }
 
 .header .action-btn {
@@ -1239,7 +1234,7 @@ body {
     background: none;
     margin-bottom: 10px;
     width: 100%;
-    height: 70px;
+    height: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
