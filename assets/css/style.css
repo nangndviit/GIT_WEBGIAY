@@ -562,8 +562,6 @@ body {
   width: 100%;
   display: flex;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
   border-bottom: 1px solid rgb(207, 206, 206);
 }
 
@@ -581,7 +579,7 @@ body {
 }
 
 .card-content {
-  margin-top: 10px;
+  margin-top: 40px;
   width: 100%;
 }
 
@@ -597,26 +595,25 @@ body {
 
 
 /* chỉnh trái tim */
+.card-action {
+  position: relative;
+  width: 100%;
+  margin-top: -40px;
+}
+
 .heart-icon {
+  position: absolute;
+  right: 10px;
   width: 30px;
   height: 30px;
-  margin-top: -40px;
   /* clip-path: polygon(100% 50%,
       50% 100%,
     ); */
-  /* transform: rotate(-45deg); /* Xoay trái tim để hiển thị đúng hướng 
-  transition: opacity 0.3s ease;
+  /* transition: opacity 0.3s ease;
   opacity: 0; */
 }
 
-button .heart-icon {
-  width: 100%;
-  right: 10px;
-}
 
-/* .card-banner:hover .heart-icon {
-  opacity: 1;
-} */
 
 
 /*-----------------------------------*\
@@ -802,6 +799,8 @@ button .heart-icon {
 }
 
 .copyright-link {
+  font-size: 16px;
+  color: #ffffff;
   display: inline-block;
 }
 
@@ -877,8 +876,8 @@ button .heart-icon {
 .back-top-btn {
   position: fixed;
   bottom: 10px;
-  right: 20px;
-  background-color: var(--portland-orange);
+  right: 30px;
+  background-color: rgb(7, 90, 185);
   color: var(--white);
   font-size: 25px;
   padding: 10px;
@@ -1032,7 +1031,6 @@ button .heart-icon {
   }
 
 
-
   /**
    * CTA
    */
@@ -1069,23 +1067,6 @@ button .heart-icon {
 }
 
 
-@media (max-width: 860px) {
-  .image-container {
-    flex-direction: column;
-    max-width: 100%;
-  }
-
-  .image-container div:not(:first-child) {
-    display: none;
-  }
-}
-
-@media (min-width: 861px) {
-  .image-container img {
-    max-width: 100%;
-    height: auto;
-  }
-}
 
 /**
  * responsive for large than 768px screen
@@ -1177,7 +1158,23 @@ button .heart-icon {
 }
 
 
+@media (max-width: 860px) {
+  .image-container {
+    flex-direction: column;
+    max-width: 100%;
+  }
 
+  .image-container div:not(:first-child) {
+    display: none;
+  }
+}
+
+@media (min-width: 861px) {
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
+}
 
 
 /**
@@ -1238,7 +1235,7 @@ button .heart-icon {
     background: none;
     margin-bottom: 10px;
     width: 100%;
-    height: 90px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
