@@ -108,10 +108,6 @@ a {
 
 }
 
-i {
-  margin-left: 10px
-}
-
 h4 {
   margin-left: 5px;
 }
@@ -168,13 +164,15 @@ body {
 
 
 
-
-
 /*-----------------------------------*\
   #REUSED STYLE
 \*-----------------------------------*/
 
 
+.header_link {
+  background-color: #000;
+  height: 40px;
+}
 
 .section {
   padding-block: var(--section-padding);
@@ -240,8 +238,6 @@ body {
   overflow: hidden;
 }
 
-
-
 .img-cover {
   width: 100%;
   height: 100%;
@@ -284,7 +280,7 @@ body {
 
 .grid-list {
   display: grid;
-  gap: 30px;
+  gap: 5px;
 }
 
 .w-100 {
@@ -301,6 +297,7 @@ body {
 }
 
 .btnn {
+  display: flex;
   padding: 10px 35px;
   text-align: center;
   font-size: 15px;
@@ -314,7 +311,7 @@ body {
   font-size: large;
   font-size: 15px;
   font-style: italic;
-  margin-left: -1px;
+  margin: 3px 3px;
 }
 
 .xem1 {
@@ -561,13 +558,16 @@ body {
 .product {
   width: 100%;
   display: flex;
-  gap: 10px;
   border-bottom: 1px solid rgb(207, 206, 206);
 }
 
 .product .img-cover.hover,
 .product-card .card-action-btn {
   display: none;
+}
+
+.product-card {
+  margin-top: 20px;
 }
 
 
@@ -584,6 +584,7 @@ body {
 }
 
 .card-content a {
+  text-wrap: pretty;
   font-size: 15px;
   padding-top: 5px;
 }
@@ -640,7 +641,7 @@ body {
 }
 
 .thanhp {
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 .scrollbar-item {
@@ -670,6 +671,7 @@ body {
   background-size: 100%;
   background-position: top;
   font-size: 20px;
+  border-top: 1px solid rgb(112, 111, 111);
 }
 
 .footer-top {
@@ -790,8 +792,8 @@ body {
 }
 
 .footer-bottom {
-  padding-block: 10px;
   background-color: black;
+  height: 49px;
 }
 
 .copyright {
@@ -801,6 +803,7 @@ body {
 .copyright-link {
   font-size: 16px;
   color: #ffffff;
+  margin-top: 10px;
   display: inline-block;
 }
 
@@ -1161,7 +1164,7 @@ body {
 @media (max-width: 860px) {
   .image-container {
     flex-direction: column;
-    max-width: 100%;
+    width: 90%;
   }
 
   .image-container div:not(:first-child) {
@@ -1171,8 +1174,12 @@ body {
 
 @media (min-width: 861px) {
   .image-container img {
-    max-width: 100%;
-    height: auto;
+    width: 90%;
+    height: 230px;
+  }
+
+  .caption {
+    max-width: 90%;
   }
 }
 

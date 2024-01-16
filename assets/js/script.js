@@ -1,7 +1,5 @@
 'use strict';
 
-
-
 /**
  * add event on element
  */
@@ -15,8 +13,6 @@ const addEventOnElem = function (elem, type, callback) {
     elem.addEventListener(type, callback);
   }
 }
-
-
 
 /**
  * navbar toggle
@@ -33,15 +29,12 @@ const toggleNavbar = function () {
 
 addEventOnElem(navToggler, "click", toggleNavbar);
 
-
 const closeNavbar = function () {
   navbar.classList.remove("active");
   navToggler.classList.remove("active");
 }
 
 addEventOnElem(navbarLinks, "click", closeNavbar);
-
-
 
 /**
  * active header when window scroll down to 100px
