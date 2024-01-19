@@ -190,6 +190,7 @@ body {
   line-height: 1.1;
 }
 
+
 .h1 {
   color: var(--white);
   font-family: var(--ff-bangers);
@@ -203,11 +204,9 @@ body {
 .h3 {
   color: var(--eerie-black);
 }
-
 .h2 {
   font-size: var(--fs-2);
 }
-
 .h3 {
   font-size: var(--fs-3);
 }
@@ -288,6 +287,7 @@ body {
 }
 
 
+
 .xem {
   display: flex;
   justify-content: center;
@@ -333,11 +333,12 @@ body {
 
 
 
-
 .imgxem {
   border-bottom: 1px solid rgb(223, 222, 222);
 
 }
+
+
 
 /*-----------------------------------*\
   #HEADER
@@ -497,6 +498,8 @@ body {
 
 
 
+
+
 /* HERO */
 
 .hero {
@@ -530,6 +533,8 @@ body {
 
 
 
+
+
 /* OFFERS */
 
 .offer-card {
@@ -557,6 +562,8 @@ body {
 .offer-card .btn:is(:hover, :focus) {
   background-color: var(--black);
 }
+
+
 
 
 /*-----------------------------------*\
@@ -615,12 +622,9 @@ body {
   right: 10px;
   width: 30px;
   height: 30px;
-  /* clip-path: polygon(100% 50%,
-      50% 100%,
-    ); */
-  /* transition: opacity 0.3s ease;
-  opacity: 0; */
 }
+
+
 
 
 
@@ -671,6 +675,8 @@ body {
 /*-----------------------------------*\
   #FOOTER
 \*-----------------------------------*/
+
+
 
 .footer {
   background-color: var(--raisin-white);
@@ -775,10 +781,6 @@ body {
   line-height: 28.8px;
   margin: 0px 0px 9px;
   padding: 10px 0px;
-  /* color: var(--black);
-  font-size: var(--fs-30);
-  font-weight: var(--fw-700);
-  padding-block: 10px; */
 }
 
 .footer-list-title2 {
@@ -882,6 +884,7 @@ body {
 /*-----------------------------------*\
   #BACK TO TOP
 \*-----------------------------------*/
+
 
 .back-top-btn {
   position: fixed;
