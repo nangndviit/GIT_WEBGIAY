@@ -351,9 +351,10 @@ body {
   position: absolute;
   top: 0;
   left: 0;
+  padding-top: 5px;
   width: 100%;
+  height: 80px;
   background-color: var(--white);
-  padding-block: 20px;
   z-index: 4;
 }
 
@@ -395,6 +396,12 @@ body {
 }
 
 .header .action-btn {
+  position: relative;
+  font-size: 22px;
+  transition: var(--transition-1);
+}
+
+.header .header-action-btn {
   position: relative;
   font-size: 22px;
   transition: var(--transition-1);
@@ -476,6 +483,7 @@ body {
   padding: 24px 0px;
   text-align: center;
   box-sizing: border-box;
+  cursor: pointer;
   /* Thêm box-sizing để padding không tăng kích thước của phần tử */
 }
 
@@ -687,7 +695,6 @@ body {
 .footer-brand,
 .footer-list {
   flex: 0 0 48%;
-  /* Chia đều không gian cho các phần tử trong container */
   margin-bottom: 20px;
 }
 
@@ -901,7 +908,6 @@ body {
 
 
 
-
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
@@ -927,6 +933,11 @@ body {
 
   }
 
+  .but {
+    border-radius: 10px;
+    font-size: 14px;
+    padding: 5px;
+  }
 
 
   /**
@@ -954,10 +965,6 @@ body {
     align-items: center;
   }
 
-  .but {
-    font-size: 14px;
-    padding: 5px;
-  }
 
   /**
    * OFFER
@@ -1053,7 +1060,8 @@ body {
    */
 
   .brand .scrollbar-item {
-    min-width: 1%;
+
+    min-width: 5%;
   }
 
 
@@ -1160,28 +1168,38 @@ body {
 
 }
 
-
-@media (max-width: 860px) {
+@media (max-width: 850px) {
   .image-container {
     flex-direction: column;
-    width: 90%;
+    width: 100%;
   }
 
   .image-container div:not(:first-child) {
     display: none;
   }
+
+  .image-container img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
-@media (min-width: 861px) {
+@media (min-width: 851px) {
+  .image-container {
+    flex-direction: row;
+  }
+
   .image-container img {
-    width: 90%;
-    height: 230px;
+    display: block;
+    max-width: 100%;
+    height: auto;
   }
 
   .caption {
-    max-width: 90%;
+    max-width: 100%;
   }
 }
+
 
 
 /**
@@ -1237,12 +1255,13 @@ body {
     display: none;
   }
 
+
   .header {
     --color: var(--black);
     background: none;
     margin-bottom: 10px;
     width: 100%;
-    height: 70px;
+    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -1290,7 +1309,7 @@ body {
   }
 
   .header.active .navbar-link:is(:hover, :focus) {
-    color: var(--portland-orange);
+    color: rgb(104, 104, 248);
   }
 
 
