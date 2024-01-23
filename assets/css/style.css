@@ -280,7 +280,6 @@ body {
 
 .grid-list {
   display: grid;
-  gap: 5px;
 }
 
 .w-100 {
@@ -482,7 +481,6 @@ body {
   font-size: 15.52px;
   line-height: 80px;
   margin: 0px 15.52px 15.52px 0px;
-  padding: 24px 0px;
   text-align: center;
   box-sizing: border-box;
   cursor: pointer;
@@ -492,9 +490,8 @@ body {
 .wrapper div {
   display: flex;
   flex-wrap: nowrap;
-  /* Ngăn chặn các nút xuống dòng */
   justify-content: center;
-  border-bottom: 1px solid rgb(223, 222, 222);
+  border-bottom: 1px solid rgb(156, 156, 156);
 }
 
 
@@ -582,6 +579,13 @@ body {
   display: none;
 }
 
+.product-card img {
+  border-radius: 10px;
+  max-width: 100%;
+  width: 293px;
+  height: 300px;
+}
+
 .product-card {
   margin-top: 20px;
 }
@@ -595,14 +599,16 @@ body {
 }
 
 .card-content {
-  margin-top: 40px;
+  margin-top: 20px;
   width: 100%;
 }
+
+
 
 .card-content a {
   text-wrap: pretty;
   font-size: 15px;
-  padding-top: 5px;
+  padding-top: 10px;
 }
 
 .card-content bdi {
@@ -634,41 +640,29 @@ body {
   #BRAND
 \*-----------------------------------*/
 
-.brand {
-  --section-padding: 24px;
-}
 
-.brand .has-scrollbar {
-  gap: 0;
-}
-
-.brand .scrollbar-item {
-  min-width: 50%;
-}
-
-
-.brand-card {
-  max-width: 100%;
-  height: 120px;
-  margin-inline: auto;
-}
-
-.thanhp {
-  margin-bottom: 10px;
-}
-
-.scrollbar-item {
-  max-width: 100%;
+.grid-list-brand {
+  list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 10px 10px 10px 10px;
+  padding: 0;
+
 }
 
-.scrollbar-item img {
-  max-width: 100%;
-  height: auto;
-  margin: 10px;
+.grid-list-brand li {
+  display: inline-block;
+  width: calc(20% - 10px);
+  margin-right: 10px;
 }
+
+.img-cover {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
 
 
 
@@ -863,7 +857,7 @@ body {
 }
 
 .cta-content {
-  padding-block: 80px var(--section-padding);
+  padding-block: 40px var(--section-padding);
 }
 
 .cta .section-title {
@@ -917,71 +911,43 @@ body {
 
 
 
+
+
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
 
-/**
- * responsive for large than 375px screen
- */
+@media (max-width: 375px) {
 
-@media (min-width: 375px) {
-
-  /**
-   * CUSTOM PROPERTY
-   */
-
-  :root {
-
-    /**
-     * typography
-     */
-
-    --fs-2: 4rem;
-    --fs-3: 2.6rem;
-
-  }
 
   .but {
-    border-radius: 10px;
+    border-radius: 100%;
+    justify-content: center;
     font-size: 14px;
-    padding: 5px;
+    font-style: normal;
+    font-weight: 55;
+    grid-area: auto;
+    font-size: 15.52px;
+    line-height: 80px;
+    margin: 0px 15.52px 15.52px 0px;
+    text-align: center;
+    box-sizing: border-box;
+    cursor: pointer;
   }
 
 
-  /**
-   * REUSED STYLE
-   */
-
-  .scrollbar-item {
-    min-width: calc(50% - 15px);
+  /** BRAND**/
+  .brand .scrollbar-item {
+    min-width: 5%;
   }
 
-  .grid-list {
-    grid-template-columns: 0.5fr 0.5fr;
-  }
-
-
-
-  /**
-   * HERO
-   */
-
-  .hero {
-    display: grid;
-    padding-inline-start: 20px;
-    justify-content: flex-start;
-    align-items: center;
+  .scrollbar-item img {
+    width: 56px;
+    height: 60px;
   }
 
 
-  /**
-   * OFFER
-   */
 
-  .offer .grid-list {
-    grid-template-columns: 1fr;
-  }
 
   /**
    * PRODUCT
@@ -999,8 +965,8 @@ body {
   .product-card img {
     border-radius: 10px;
     max-width: 100%;
-    width: 295px;
-    height: 298px;
+    width: 167px;
+    height: 185px;
   }
 
   .product-card .card-action-btn,
@@ -1050,6 +1016,64 @@ body {
   }
 
 
+}
+
+/**
+ * responsive for large than 375px screen
+ */
+
+@media (min-width: 375px) {
+
+  /**
+   * CUSTOM PROPERTY
+   */
+
+  :root {
+
+    /**
+     * typography
+     */
+
+    --fs-2: 4rem;
+    --fs-3: 2.6rem;
+
+  }
+
+
+  /**
+   * REUSED STYLE
+   */
+
+  .scrollbar-item {
+    min-width: calc(50% - 15px);
+  }
+
+  .grid-list {
+    grid-template-columns: 0.5fr 0.5fr;
+  }
+
+
+
+  /**
+   * HERO
+   */
+
+  .hero {
+    display: grid;
+    padding-inline-start: 20px;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+
+  /**
+   * OFFER
+   */
+
+  .offer .grid-list {
+    grid-template-columns: 1fr;
+  }
+
   /**
    * CTA
    */
@@ -1068,10 +1092,10 @@ body {
    * BRAND
    */
 
-  .brand .scrollbar-item {
+  /* .brand .scrollbar-item {
 
     min-width: 5%;
-  }
+  } */
 
 
 
