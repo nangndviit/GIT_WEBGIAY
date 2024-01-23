@@ -54,3 +54,56 @@ const activeElemOnScroll = function () {
 }
 
 addEventOnElem(window, "scroll", activeElemOnScroll);
+
+
+
+let list = document.querySelector('.slider .move');
+let items = document.querySelectorAll('.slider .move .move_sli');
+let dots = document.querySelectorAll('.slider .dots li');
+let prev = document.getElementById('prev');
+let next = document.getElementById('next');
+
+let dot_sli = 0;
+let lengthItems = items.length - 1;
+
+next.onclick = function () {
+  if (dot_sli + 1 > lengthItems) {
+    dot_sli = 0;
+  } else {
+    dot_sli = dot_sli + 1;
+  }
+  reloadSlider();
+}
+prev.onclick = function () {
+  if (dot_sli - 1) {
+    dot_sli = lengthItems;
+  } else {
+    dot_sli = dot_sli - 1;
+  }
+  reloadSlider();
+}
+
+let refreshSlider = setInterval(() => { next.click() }, 5000);
+
+function reloadSlider() {
+  let checkLeft = items[dot_sli].offsetLeft;
+  list.style.left = -checkLeft + 'px';
+
+
+  // document.querySelector('.dot_sli').classList.remove('dot_sli');
+  // document.querySelector('index-item' + dot_sli).classList.add('index-item');
+
+  let lastActiveDot = document.querySelector('.slider .dots li.dot_sli');
+  lastActiveDot.classList.remove('dot_sli');
+  dots[dot_sli].classList.add('dot_sli');
+  clearInterval(refreshSlider);
+  refreshSlider = setInterval(() => { next.click() }, 5000);
+
+}
+
+dots.forEach((li, key) => {
+  li.addEventListener('click', function () {
+    dot_sli = key;
+    reloadSlider();
+  })
+})

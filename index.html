@@ -14,6 +14,7 @@
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
         <link
             href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
             rel="stylesheet"
@@ -109,6 +110,10 @@
                         ></ion-icon>
                     </button>
 
+                    <button class="action-btn activitithngang" aria-label="Search">
+                        
+                    </button>
+
                     <button class="action-btn" aria-label="cart">
                         <ion-icon
                             name="bag-handle-outline"
@@ -122,18 +127,31 @@
         <main>
             <article>
                 <!--- #giới thiệu-->
-                <section
-                    class="section hero has-bg-image"
-                    id="home"
-                    aria-label="home"
-                    style="
-                        width: 100%;
-                        height: 600px;
-                        margin-top: 80px;
-                        background-position: center;
-                        background-image: url('https://www.bdresearch.org/wp-content/uploads/2020/01/giay-sneaker-nike.jpg');
-                    "
-                ></section>
+                <section>
+                    <div class="slider">
+                        <div class="move">
+                            <div class="move_sli">
+                                <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Designer-Below-Retail-Apparel-an-2048x648.webp">
+                            </div>
+                            <div class="move_sli">
+                                <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/AJ1_Yellow_Ochre_Release_DayPrim-2048x625.webp">
+                            </div>
+                            <div class="move_sli">
+                                <img src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Designer-Below-Retail-Apparel-an-2048x648.webp">
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="buttons">
+                        <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                        <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+                    </div>
+                    <ul class="dots">
+                        <li class="dot_sli"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </section>
 
                 <!-- hãng sản phẩm -->
 
@@ -161,6 +179,43 @@
                         </p>
 
                         <ul class="grid-list">
+                            <li>
+                                <div class="product-card">
+                                    <div
+                                        class="card-banner"
+                                        style="width: 291px; height: 298px"
+                                    >
+                                        <img
+                                            src="https://giaygiare.vn/upload/images/shop-ban-giay-nike-air-force-1-replica-gia-re-nhat-tai-tphcm.jpg"
+                                            loading="lazy"
+                                            alt="Commodo leo sed porta"
+                                            class="img-cover"
+                                        />
+
+                                        <button
+                                            class="card-action"
+                                            aria-label="Yêu Thích"
+                                            title="Yêu Thích"
+                                        >
+                                            <div class="heart-icon"> 
+                                                <i
+                                                    class="fa-regular fa-heart"
+                                                ></i>
+                                            </div>
+                                        </button>
+                                    </div>
+
+                                    <div class="card-content">
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
+                                        <a href="">
+                                            Giày Nike Air Force 1 ’07 ‘White’
+                                            315122-111
+                                        </a>
+                                        <bdi>4,500,000 ₫</bdi>
+                                    </div>
+                                </div>
+                            </li>
+
                             <li>
                                 <div class="product-card">
                                     <div
@@ -225,7 +280,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Force 1 ’07 ‘White’
                                             315122-111
@@ -262,44 +317,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
-                                        <a href="">
-                                            Giày Nike Air Force 1 ’07 ‘White’
-                                            315122-111
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
-                                    </div>
-                                </div>
-                            </li>
-
-                            <li>
-                                <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; height: 298px"
-                                    >
-                                        <img
-                                            src="https://giaygiare.vn/upload/images/shop-ban-giay-nike-air-force-1-replica-gia-re-nhat-tai-tphcm.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover"
-                                        />
-
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích"
-                                        >
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"
-                                                ></i>
-                                            </div>
-                                        </button>
-                                    </div>
-
-                                    <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p> 
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -336,7 +354,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p> 
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -373,7 +391,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p> 
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -410,7 +428,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p> 
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -447,7 +465,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p> 
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -475,7 +493,6 @@
                             Mặt hàng giày các thương hiệu nổi bật
                         </p>
 
-                        
                         <ul class="grid-list-brand">
                             <li>
                                 <div class="product-card-brand">
@@ -530,8 +547,6 @@
                             </li>
                         </ul>
                         
-
-                        
                     </div>
                     <div class="image_res" style="overflow: hidden; max-height: 300px; height: 100%; display: flex; justify-content: center; align-items: center;">
                         <img style="width: 100%; height: 100%; object-fit: cover;" src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/Adidas-Yeezy-Slide-2048x648.webp" alt="">
@@ -579,7 +594,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -620,7 +635,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -661,7 +676,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -702,7 +717,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -760,7 +775,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -794,7 +809,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -828,7 +843,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -868,7 +883,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -903,7 +918,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -937,7 +952,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -971,7 +986,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian Emb Glow’ 553558-481
                                         </a>
@@ -1011,7 +1026,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Giày Jordan 1 (2023)</u>
+                                        <p><u>Giày Jordan 1 (2023)</u></p>
                                         <a href="">
                                             Giày Nike Air Jordan 1 Low ‘Obsidian
                                             Emb Glow’ 553558-481
@@ -1070,7 +1085,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Nước Hoa</u>
+                                        <p><u>Nước Hoa</u></p>
                                         <a href="">
                                             Nước Hoa Chanel Allure Homme Sport
                                             EDT
@@ -1105,7 +1120,7 @@
                                         </div>
     
                                         <div class="card-content">
-                                            <u>Nước Hoa</u>
+                                            <p><u>Nước Hoa</u></p>
                                             <a href="">
                                                 Nước Hoa Chanel Allure Homme Sport
                                             EDT
@@ -1142,7 +1157,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Nước Hoa</u>
+                                        <p><u>Nước Hoa</u></p>
                                         <a href="">
                                             Nước Hoa Chanel Allure Homme Sport
                                             EDT
@@ -1179,7 +1194,7 @@
                                     </div>
 
                                     <div class="card-content">
-                                        <u>Nước Hoa</u>
+                                        <p><u>Nước Hoa</u></p>
                                         <a href="">
                                             Nước Hoa Chanel Allure Homme Sport
                                             EDT
@@ -1244,7 +1259,7 @@
 
                         <div class="image-container">
                             <div>
-                              <img style="width: 390px; height: 221px;" src="http://file.hstatic.net/1000230642/collection/web_banner___phien_ban_40_nam_c79b4b7e172046b28d7d46e29594826b.png" alt="Hình ảnh 1">
+                              <img style="width: 390px; height: 221px;" src="https://vilas.edu.vn/wp-content/uploads/2017/11/nike.jpg" alt="Hình ảnh 1">
                               <p class="caption">Đại giảm giá cuối năm mau ngay kẻo hết</p>
                             </div>
 
