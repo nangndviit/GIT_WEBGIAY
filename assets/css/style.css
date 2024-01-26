@@ -549,26 +549,6 @@ body {
   font-weight: bold;
 }
 
-.index-image {
-  position: absolute;
-  bottom: 270px;
-  display: flex;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-.index-item {
-  border: 2px solid rgb(255, 255, 255);
-  padding: 10px;
-  margin: 5px;
-  border-radius: 50%;
-}
-
-.active {
-  background-color: #ffffff;
-}
-
 /* 
 .dots {
   position: absolute;
@@ -1172,9 +1152,6 @@ body {
     object-fit: fill;
   }
 
-  .index-image {
-    margin-bottom: 100px;
-  }
 
 
 
@@ -1312,9 +1289,6 @@ body {
     display: none;
   }
 
-  .index-image {
-    bottom: 0;
-  }
 
 
 

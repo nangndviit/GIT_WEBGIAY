@@ -89,9 +89,6 @@ function reloadSlider() {
   let checkLeft = items[dot_sli].offsetLeft;
   list.style.left = -checkLeft + 'px';
 
-  document.querySelector('.active').classList.remove('active');
-  document.querySelector('.index-item-' + dot_sli).classList.add('active');
-
   clearInterval(refreshSlider);
   refreshSlider = setInterval(() => { next.click() }, 5000);
 
