@@ -89,13 +89,9 @@ function reloadSlider() {
   let checkLeft = items[dot_sli].offsetLeft;
   list.style.left = -checkLeft + 'px';
 
-
   document.querySelector('.active').classList.remove('active');
   document.querySelector('.index-item-' + dot_sli).classList.add('active');
 
-  // let lastActiveDot = document.querySelector('.slider .dots li.dot_sli');
-  // lastActiveDot.classList.remove('dot_sli');
-  // dots[dot_sli].classList.add('dot_sli');
   clearInterval(refreshSlider);
   refreshSlider = setInterval(() => { next.click() }, 5000);
 
