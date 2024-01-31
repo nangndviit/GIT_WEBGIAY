@@ -14,12 +14,13 @@
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
             rel="stylesheet"
             integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-            crossorigin="anonymous">
+            crossorigin="anonymous" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-            rel="stylesheet">
+        <link
+            href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+            rel="stylesheet" />
         <link
             href="https://fonts.googleapis.com/css2?family=Bangers&family=Carter+One&family=Nunito+Sans:wght@400;700&display=swap"
             rel="stylesheet" />
@@ -33,23 +34,25 @@
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
 
-    <body id="top">
+    <body>
         <!-- logo và menu  -->
-
+        <!-- <div class="menu__close">
+            <i class="fa-solid fa-xmark"></i>
+        </div> -->
         <header class="header" data-header>
             <div class="container">
                 <button
-                    class="nav-toggle-btn"
+                    class="menu--open"
                     aria-label="toggle manu"
                     data-nav-toggler>
                     <ion-icon
                         name="menu-outline"
-                        aria-hidden="true"
-                        class="menu-icon"></ion-icon>
+                        aria-hidden="true"></ion-icon>
+                </button>
+                <button class="menu--close">
                     <ion-icon
                         name="close-outline"
-                        aria-label="true"
-                        class="close-icon"></ion-icon>
+                        aria-label="true"></ion-icon>
                 </button>
 
                 <!-- logo -->
@@ -58,6 +61,57 @@
                         src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/ft-logo.webp"
                         alt />
                 </a>
+
+                <nav class="navbar2" data-navbar>
+                    <ul class="navbar-list2">
+                        <li class="sreach">
+                            <form action="#" method="GET">
+                                <div class="search-box">
+                                    <input type="text" name="search"
+                                        placeholder="Tìm kiếm..." />
+                                    <button class="but-search" type="submit">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2" data-nav-link>GIÀY
+                                JORDAN KHÁC <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2" data-nav-link>GIÀY
+                                SNEAKER <i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2" data-nav-link>
+                                QUẦN ÁO<i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2" data-nav-link>PHỤ
+                                KIỆN<i
+                                    class="fa-solid fa-chevron-right"></i></a>
+                        </li>
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2"
+                                data-nav-link>NEWS</a>
+                        </li>
+
+                        <li class="navbar-item2">
+                            <a href="#" class="navbar-link2" data-nav-link>LIÊN
+                                HỆ</a>
+                        </li>
+                    </ul>
+
+                    <a href="#" class="navbar-action-btn">Đăng Nhập</a>
+                </nav>
 
                 <!-- menu trên cung-->
                 <nav class="navbar" data-navbar>
@@ -91,24 +145,20 @@
                                 HỆ</a>
                         </li>
                     </ul>
-
-                    <a href="#" class="navbar-action-btn">Đăng Nhập</a>
                 </nav>
 
                 <!-- tìm kiếm, đăng nhập và shop -->
 
                 <div class="header-actions">
-                    <button class="action-btn" aria-label="Search">
-                        <ion-icon
-                            name="search-outline"
+                    <button class="action-btn-search" aria-label="Search">
+                        <ion-icon name="search-outline"
                             aria-hidden="true"></ion-icon>
                     </button>
 
                     <button class="activitithngang"></button>
 
-                    <button class="action-btn" aria-label="cart">
-                        <ion-icon
-                            name="bag-handle-outline"
+                    <button class="action-btn-cart" aria-label="cart">
+                        <ion-icon name="bag-handle-outline"
                             aria-hidden="true"></ion-icon>
                     </button>
                 </div>
@@ -119,40 +169,71 @@
             <article>
                 <!--- #giới thiệu-->
                 <section>
-                    <div id="carouselExampleAutoplaying" class="carousel slide"
-                        style="margin-top: 100px;"
+                    <div
+                        id="carouselExampleIndicators"
+                        class="carousel slide"
                         data-bs-ride="carousel">
+                        <!-- <div class="carousel-indicators">
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="0" class="active"
+                                aria-current="true"
+                                aria-label="Slide 1"> </button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div> -->
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img
                                     src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Designer-Below-Retail-Apparel-an-2048x648.webp"
-                                    class="d-block w-100">
-                            </div>
-                            <div class="carousel-item">
-                                <img
-                                    src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/AJ1_Yellow_Ochre_Release_DayPrim-2048x625.webp"
-                                    class="d-block w-100">
+                                    class="d-block w-100"
+                                    alt="..." />
                             </div>
                             <div class="carousel-item">
                                 <img
                                     src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/BrandCampaign_LaunchBanners_Prim-1-2048x623.webp"
-                                    class="d-block w-100">
+                                    class="d-block w-100"
+                                    alt="..." />
+                            </div>
+                            <div class="carousel-item">
+                                <img
+                                    src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/AJ1_Yellow_Ochre_Release_DayPrim-2048x625.webp"
+                                    class="d-block w-100"
+                                    alt="..." />
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button"
-                            data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="prev">
-                            <span class="carousel-control-prev-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
-                        <button class="carousel-control-next" type="button"
-                            data-bs-target="#carouselExampleAutoplaying"
-                            data-bs-slide="next">
-                            <span class="carousel-control-next-icon"
-                                aria-hidden="true"></span>
-                            <span class="visually-hidden"></span>
-                        </button>
+                        <div class="click">
+                            <button
+                                class="carousel-control-prev"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="prev">
+                                <div class="click-prev">
+                                    <span
+                                        class="carousel-control-prev-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </div>
+                            </button>
+                            <button
+                                class="carousel-control-next"
+                                type="button"
+                                data-bs-target="#carouselExampleIndicators"
+                                data-bs-slide="next">
+                                <div class="click-next">
+                                    <span
+                                        class="carousel-control-next-icon"
+                                        aria-hidden="true"></span>
+                                    <span class="visually-hidden"></span>
+                                </div>
+                            </button>
+                        </div>
                     </div>
                 </section>
 
@@ -162,10 +243,10 @@
                     <div class="container">
                         <div class="wrapper">
                             <div class="button-container">
-                                <a href="#" class="but">Giày</a>
-                                <a href="#" class="but">Quần Áo</a>
-                                <a href="#" class="but">Phụ Kiện</a>
-                                <a href="#" class="but">Brand</a>
+                                <p class="but">Giày</p>
+                                <p class="but">Quần Áo</p>
+                                <p class="but">Phụ Kiện</p>
+                                <p class="but">Brand</p>
                             </div>
                         </div>
                     </div>
@@ -178,38 +259,33 @@
                         <h4>Giày chính hãng Nike 2023</h4>
                         <p class="thanhp">
                             Mẫu giày Nike Jordan 1, Air Force 1, các sản phẩm
-                            bóng rổ,… mới nhất 2023 với giá cực tốt
+                            bóng rổ,… mới
+                            nhất 2023 với giá cực tốt
                         </p>
 
                         <ul class="grid-list">
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Force 1 ’07 ‘White’
-                                            315122-11
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -217,32 +293,26 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Force 1 ’07 ‘White’
-                                            315122-1
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -250,32 +320,26 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Force 1 ’07 ‘White’
-                                            315122-1
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -283,32 +347,26 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -316,32 +374,25 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
-
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -349,32 +400,26 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
-
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -382,65 +427,54 @@
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫ - 5,600,000 ₫</bdi>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
+                                        <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/776547_01.jpg_79fdea599edb49e4ace83698f93f26e1.jpeg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://www.chuphinhsanpham.vn/wp-content/uploads/2021/06/chup-hinh-giay-dincox-shoes-c-photo-studio-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
                                         <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
+                                        <a href> Giày Nike Air Force 1 ’07
+                                            ‘White’ 315122-11 </a>
                                         <bdi>4,500,000 ₫</bdi>
                                     </div>
                                 </div>
@@ -460,165 +494,146 @@
                 <section class="section brand" aria-label="brand">
                     <div class="container">
                         <h4>Thương Hiệu Nổi Bật</h4>
-                        <p class="thanhp">
-                            Mặt hàng giày các thương hiệu nổi bật
-                        </p>
+                        <p class="thanhp">Mặt hàng giày các thương hiệu nổi
+                            bật</p>
 
                         <div class="bran__list">
-
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                             <div class="bran__item">
                                 <div class="bran__top">
                                     <div class="bran__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/IE0586.webp"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
-                                <h3 class="bran__name">
-                                    Adidas
-                                </h3>
+                                <h3 class="bran__name">Adidas</h3>
                             </div>
                         </div>
-
                     </div>
-                    <div class="image_res"
-                        style="overflow: hidden; max-height: 300px; height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div
+                        class="image_res"
+                        style="
+              overflow: hidden;
+              max-height: 300px;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            ">
                         <img
-                            style="width: 100%; height: 100%; object-fit: cover;"
+                            style="width: 100%; height: 100%; object-fit: cover"
                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/Adidas-Yeezy-Slide-2048x648.webp"
-                            alt>
+                            alt />
                     </div>
                 </section>
 
@@ -627,152 +642,129 @@
                 <section class="section brand" aria-label="brand">
                     <div class="container">
                         <h4>Giày Sneaker nổi bật</h4>
-                        <p class="thanhp">
-                            Mặt hàng giày các thương hiệu nổi bật
-                        </p>
+                        <p class="thanhp">Mặt hàng giày các thương hiệu nổi
+                            bật</p>
 
                         <ul class="grid-list">
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px;
-                                            max-width: 100%;
-                                        ">
-                                        <img
-                                            src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-sneakers-colorful-png-image_1758438.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/602070_01.jpg_5d78c325c3334983ab1e1013f42642bc.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/11/giay-new-balance-530-retro-running-navy-mr530sg-1-768x768.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
+                                        <p>Giày New Balance</p>
                                         <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
+                                            Giày New Balance 530 Retro ‘Running
+                                            Navy’ MR530SG
                                         </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px;  max-width: 100%;
-                                        ">
-                                        <img
-                                            src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-sneakers-colorful-png-image_1758438.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/602070_01.jpg_5d78c325c3334983ab1e1013f42642bc.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/11/giay-new-balance-530-retro-running-navy-mr530sg-1-768x768.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
+                                        <p>Giày New Balance</p>
                                         <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
+                                            Giày New Balance 530 Retro ‘Running
+                                            Navy’ MR530SG
                                         </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px; max-width: 100%;
-                                        ">
-                                        <img
-                                            src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-sneakers-colorful-png-image_1758438.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/602070_01.jpg_5d78c325c3334983ab1e1013f42642bc.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/11/giay-new-balance-530-retro-running-navy-mr530sg-1-768x768.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
+                                        <p>Giày New Balance</p>
                                         <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
+                                            Giày New Balance 530 Retro ‘Running
+                                            Navy’ MR530SG
                                         </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px; max-width: 100%;
-                                        ">
-                                        <img
-                                            src="https://png.pngtree.com/png-vector/20190927/ourlarge/pngtree-sneakers-colorful-png-image_1758438.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/602070_01.jpg_5d78c325c3334983ab1e1013f42642bc.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/11/giay-new-balance-530-retro-running-navy-mr530sg-1-768x768.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
-
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
+                                        <p>Giày New Balance</p>
                                         <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
+                                            Giày New Balance 530 Retro ‘Running
+                                            Navy’ MR530SG
                                         </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
@@ -784,14 +776,21 @@
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </div>
-                    <div class="image_res"
-                        style="overflow: hidden; max-height: 300px; height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div
+                        class="image_res"
+                        style="
+              overflow: hidden;
+              max-height: 300px;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            ">
                         <img
-                            style="width: 100%; height: 100%; object-fit: cover;"
+                            style="width: 100%; height: 100%; object-fit: cover"
                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/11/retro-4-olive-3-1-2048x1331.webp"
-                            alt>
+                            alt />
                     </div>
-
                 </section>
 
                 <!-- sản phẩm4 -->
@@ -799,279 +798,238 @@
                 <section class="section brand" aria-label="brand">
                     <div class="container">
                         <h4>Yeezy by Kanye West</h4>
-                        <p class="thanhp">
-                            Yeezy 350 và dép Yeezy cho mùa hè 2023
-                        </p>
+                        <p class="thanhp">Yeezy 350 và dép Yeezy cho mùa hè
+                            2023</p>
 
                         <ul class="grid-list">
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px; max-width: 100%;
-                                        
-                                        ">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="
-                                            width: 291px;
-                                            height: 298px; max-width: 100%;
-                                        
-                                        ">
-                                        <img
-                                            src="https://product.hstatic.net/1000069459/product/giay-the-thao-94_a7d55c7c84164fef8e40dcaed3e52d3d_master.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/adidas-yeezy-foam-rnnr-onyx-prod_2672bb63ccc542fea2a7f52d2792d57b.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://cdn.shopify.com/s/files/1/0640/3846/9846/products/Adidas-Yeezy-Foam-RNNR-Sand-8.jpg?v=1663468333"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Giày Jordan 1 (2023)</p>
-                                        <a href>
-                                            Giày Nike Air Jordan 1 Low ‘Obsidian
-                                            Emb Glow’ 553558-481
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Dép Yeezy 350</p>
+                                        <a href> Dép Adidas Yeezy Slide
+                                            ‘Granite’ ID4132 </a>
+                                        <bdi>2,700,000 <u>đ</u> - 2,900,000
+                                            <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
@@ -1083,12 +1041,20 @@
                             <i class="fa-solid fa-angle-right"></i>
                         </button>
                     </div>
-                    <div class="image_res"
-                        style="overflow: hidden; max-height: 300px; height: 100%; display: flex; justify-content: center; align-items: center;">
+                    <div
+                        class="image_res"
+                        style="
+              overflow: hidden;
+              max-height: 300px;
+              height: 100%;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            ">
                         <img
-                            style="width: 100%; height: 100%; object-fit: cover;"
+                            style="width: 100%; height: 100%; object-fit: cover"
                             src="https://bazaarvietnam.vn/wp-content/uploads/2022/09/top-3-thuong-hieu-giay-sneaker-noi-dia-duoc-long-gioi-tre-viet-8.jpg"
-                            alt>
+                            alt />
                     </div>
                 </section>
 
@@ -1097,139 +1063,118 @@
                 <section class="section brand" aria-label="brand">
                     <div class="container">
                         <h4>Phụ kiện</h4>
-                        <p class="thanhp">
-                            Mặt hàng phụ kiện các thương hiệu nổi bật
-                        </p>
+                        <p class="thanhp">Mặt hàng phụ kiện các thương hiệu nổi
+                            bật</p>
 
                         <ul class="grid-list">
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://phukienlichlam.com/upload/store/2019-01-24/ghim-cai-ao-unisex-nam-nu-phu-kien-cai-ao-qt851-vang.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/kinh-gucci-glasses-black-gg09130-photoaidcom-2x-ai-zoom.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/04/kinh-gucci-glasses-black-gg09130-001-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Nước Hoa</p>
-                                        <a href>
-                                            Nước Hoa Chanel Allure Homme Sport
-                                            EDT
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Kính Gucci</p>
+                                        <a href> Kính Gucci Glasses ‘Black’
+                                            GG09130-001 </a>
+                                        <bdi>6,900,000 <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px;">
-                                        <img
-                                            src="https://phukienlichlam.com/upload/store/2019-01-24/ghim-cai-ao-unisex-nam-nu-phu-kien-cai-ao-qt851-vang.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/kinh-gucci-glasses-black-gg09130-photoaidcom-2x-ai-zoom.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/04/kinh-gucci-glasses-black-gg09130-001-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Nước Hoa</p>
-                                        <a href>
-                                            Nước Hoa Chanel Allure Homme Sport
-                                            EDT
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Kính Gucci</p>
+                                        <a href> Kính Gucci Glasses ‘Black’
+                                            GG09130-001 </a>
+                                        <bdi>6,900,000 <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://phukienlichlam.com/upload/store/2019-01-24/ghim-cai-ao-unisex-nam-nu-phu-kien-cai-ao-qt851-vang.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/kinh-gucci-glasses-black-gg09130-photoaidcom-2x-ai-zoom.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/04/kinh-gucci-glasses-black-gg09130-001-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Nước Hoa</p>
-                                        <a href>
-                                            Nước Hoa Chanel Allure Homme Sport
-                                            EDT
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Kính Gucci</p>
+                                        <a href> Kính Gucci Glasses ‘Black’
+                                            GG09130-001 </a>
+                                        <bdi>6,900,000 <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
 
                             <li>
                                 <div class="product-card">
-                                    <div
-                                        class="card-banner img-holder"
-                                        style="width: 291px; max-width: 100%; height: 298px">
-                                        <img
-                                            src="https://phukienlichlam.com/upload/store/2019-01-24/ghim-cai-ao-unisex-nam-nu-phu-kien-cai-ao-qt851-vang.jpg"
-                                            loading="lazy"
-                                            alt="Commodo leo sed porta"
-                                            class="img-cover" />
+                                    <div class="card-banner">
+                                        <div class="like-img">
+                                            <img
+                                                style
+                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/09/kinh-gucci-glasses-black-gg09130-photoaidcom-2x-ai-zoom.png"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
 
-                                        <button
-                                            class="card-action"
-                                            aria-label="Yêu Thích"
-                                            title="Yêu Thích">
-                                            <div class="heart-icon">
-                                                <i
-                                                    class="fa-regular fa-heart"></i>
-                                            </div>
-                                        </button>
+                                        <div class="top-img">
+                                            <img
+                                                src="https://sneakerdaily.vn/wp-content/uploads/2022/04/kinh-gucci-glasses-black-gg09130-001-4.jpg"
+                                                alt="Commodo leo sed porta" />
+                                        </div>
+
+                                        <i class="fa-regular fa-heart"></i>
                                     </div>
 
                                     <div class="card-content">
-                                        <p>Nước Hoa</p>
-                                        <a href>
-                                            Nước Hoa Chanel Allure Homme Sport
-                                            EDT
-                                        </a>
-                                        <bdi>4,500,000 ₫</bdi>
+                                        <p>Kính Gucci</p>
+                                        <a href> Kính Gucci Glasses ‘Black’
+                                            GG09130-001 </a>
+                                        <bdi>6,900,000 <u>đ</u></bdi>
                                     </div>
                                 </div>
                             </li>
@@ -1256,287 +1201,264 @@
                                     <div class="new__image">
                                         <img
                                             src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Thiet-ke-chua-co-ten-4-6.png"
-                                            alt>
+                                            alt />
                                     </div>
                                 </div>
                                 <h5 class="new__name">
                                     <p>
                                         <b>Tương lai của những đôi sneaker được
-                                            tạo bởi AI sẽ đi về đâu?</b>
-                                        </>
-                                    </h5>
-                                </div>
-                                <div class="new__item">
-                                    <div class="new__top">
-                                        <div class="new__image">
-                                            <img
-                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Thiet-ke-chua-co-ten-4-6.png"
-                                                alt>
-                                        </div>
-                                    </div>
-                                    <h5 class="new__name">
-                                        <p>
-                                            <b>Top giày chạy bộ màu trắng cho
-                                                hiệu
-                                                suất
-                                                nguyên sơ</b>
-                                        </p>
-                                    </h5>
-                                </div>
-                                <div class="new__item">
-                                    <div class="new__top">
-                                        <div class="new__image">
-                                            <img
-                                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Thiet-ke-chua-co-ten-4-6.png"
-                                                alt>
-                                        </div>
-                                    </div>
-                                    <h5 class="new__name">
-                                        <p>
-                                            <b>Top giày chạy bộ màu trắng cho
-                                                hiệu
-                                                suất
-                                                nguyên sơ</b>
-                                            </>
-                                        </h5>
-                                    </div>
-                                </div>
-
+                                            tạo bởi AI sẽ đi về
+                                            đâu?</b>
+                                    </p>
+                                </h5>
                             </div>
-                        </section>
-                    </article>
-                </main>
+                            <div class="new__item">
+                                <div class="new__top">
+                                    <div class="new__image">
+                                        <img
+                                            src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Thiet-ke-chua-co-ten-4-6.png"
+                                            alt />
+                                    </div>
+                                </div>
+                                <h5 class="new__name">
+                                    <p>
+                                        <b>Top giày chạy bộ màu trắng cho hiệu
+                                            suất nguyên sơ</b>
+                                    </p>
+                                </h5>
+                            </div>
+                            <div class="new__item">
+                                <div class="new__top">
+                                    <div class="new__image">
+                                        <img
+                                            src="https://cdn.authentic-shoes.com/wp-content/uploads/2024/01/Thiet-ke-chua-co-ten-4-6.png"
+                                            alt />
+                                    </div>
+                                </div>
+                                <h5 class="new__name">
+                                    <p>
+                                        <b>Top giày chạy bộ màu trắng cho hiệu
+                                            suất nguyên sơ</b>
+                                    </p>
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </article>
+        </main>
 
-                <!-- Footer -->
+        <!-- Footer -->
 
-                <footer class="footer">
-                    <div class="footer-top section" id>
-                        <div class="container">
-                            <div class="footer-brand">
-                                <a href="#" class="logo1">
-                                    <img
-                                        src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/ft-logo.webp"
-                                        alt />
-                                </a>
+        <footer class="footer">
+            <div class="footer-top section" id>
+                <div class="container">
+                    <div class="footer-brand">
+                        <a href="#" class="logo1">
+                            <img
+                                src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/ft-logo.webp"
+                                alt />
+                        </a>
 
-                                <p class="footer-text">
-                                    Công Ty TNHH TM và Đầu Tư Quốc Tế Á Châu MST
-                                    :
-                                    0109539054 Authentic Shoes - Nhà sưu tầm và
-                                    phân
-                                    phối chính hãng các thương hiệu thời trang
-                                    quốc tế
-                                    hàng đầu Việt Nam
+                        <p class="footer-text">
+                            Công Ty TNHH TM và Đầu Tư Quốc Tế Á Châu MST :
+                            0109539054
+                            Authentic Shoes - Nhà sưu tầm và phân phối chính
+                            hãng các thương
+                            hiệu thời trang quốc tế hàng đầu Việt Nam
+                        </p>
+
+                        <ul class="contact-list">
+                            <li>
+                                <p class="footer-list-title">
+                                    <b>HỆ THỐNG CỬA HÀNG</b>
                                 </p>
+                            </li>
+                            <li class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#" class="contact-link">
+                                    Cơ sở 1: 561 Nguyễn Đình Chiểu Phường 2 -
+                                    Quận 3 - TP. Hồ Chí
+                                    Minh</a>
+                            </li>
 
-                                <ul class="contact-list">
-                                    <li>
-                                        <p class="footer-list-title">
-                                            <b>HỆ THỐNG CỬA HÀNG</b>
-                                        </p>
-                                    </li>
-                                    <li class="contact-item">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <a href="#" class="contact-link">
-                                            Cơ sở 1: 561 Nguyễn Đình Chiểu
-                                            Phường 2 -
-                                            Quận 3 - TP. Hồ Chí Minh</a>
-                                    </li>
+                            <li class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+84823184076" class="contact-link">
+                                    Hotline : 0786665444</a>
+                            </li>
+                            <li class="contact-item">
+                                <i class="fa-solid fa-location-dot"></i>
+                                <a href="#" class="contact-link">
+                                    Cở sở 2 : 70-72 Tây Sơn - Đống Đa - Hà
+                                    Nội</a>
+                            </li>
 
-                                    <li class="contact-item">
-                                        <i class="fa-solid fa-phone"></i>
-                                        <a href="tel:+84823184076"
-                                            class="contact-link">
-                                            Hotline : 0786665444</a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <i class="fa-solid fa-location-dot"></i>
-                                        <a href="#" class="contact-link">
-                                            Cở sở 2 : 70-72 Tây Sơn - Đống Đa -
-                                            Hà
-                                            Nội</a>
-                                    </li>
+                            <li class="contact-item">
+                                <i class="fa-solid fa-phone"></i>
 
-                                    <li class="contact-item">
-                                        <i class="fa-solid fa-phone"></i>
+                                <a href="tel:+84823184076"
+                                    class="contact-link">Hotline :
+                                    0785499555</a>
+                            </li>
+                            <li class="contact-item">
+                                <i class="fa-solid fa-envelope"></i>
+                                <a href="tel:+84823184076" class="contact-link">
+                                    Service@AutheticShoes.com</a>
+                            </li>
+                            <li class="contact-item" style="margin-left: 15px">
+                                <a href="tel:+84823184076" class="contact-link">
+                                    ĐKKD: 01E8027929 - Cấp ngày: 01/06/2019 -
+                                    Nơi cấp: Hà Nội</a>
+                            </li>
+                        </ul>
 
-                                        <a href="tel:+84823184076"
-                                            class="contact-link">Hotline :
-                                            0785499555</a>
-                                    </li>
-                                    <li class="contact-item">
-                                        <i class="fa-solid fa-envelope"></i>
-                                        <a href="tel:+84823184076"
-                                            class="contact-link">
-                                            Service@AutheticShoes.com</a>
-                                    </li>
-                                    <li class="contact-item"
-                                        style="margin-left: 15px">
-                                        <a href="tel:+84823184076"
-                                            class="contact-link">
-                                            ĐKKD: 01E8027929 - Cấp ngày:
-                                            01/06/2019 -
-                                            Nơi cấp: Hà Nội</a>
-                                    </li>
-                                </ul>
-
-                                <img
-                                    style="
-                                width: 100px;
-                                height: 20px;
-                                margin-left: 15px;
-                            "
-                                    src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-08.png?ID=9bda31ca-31ab-4a2d-b9df-8bced834801e"
-                                    alt />
-                            </div>
-
-                            <ul class="footer-list">
-                                <li>
-                                    <p class="footer-list-title2">
-                                        <a href="#">Về Chúng Tôi</a>
-                                    </p>
-                                </li>
-
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link"> Giới
-                                        Thiệu</a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link"> Tuyển
-                                        Dụng</a>
-                                </li>
-
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Dịch Vụ Spa, Sửa Giày</a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Tin Tức - Sự Kiện</a>
-                                </li>
-
-                                <li>
-                                    <p class="footer-list-title2">
-                                        <a href="#">Kết Nối Với Chúng Tôi</a>
-                                    </p>
-                                </li>
-                                <ul class="social-list">
-                                    <li>
-                                        <a href="#" class="social-link">
-                                            <ion-icon
-                                                name="logo-facebook"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="social-link">
-                                            <ion-icon
-                                                name="logo-twitter"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="social-link">
-                                            <ion-icon
-                                                name="logo-youtube"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="social-link">
-                                            <ion-icon
-                                                name="logo-tiktok"></ion-icon>
-                                        </a>
-                                    </li>
-
-                                    <li>
-                                        <a href="#" class="social-link">
-                                            <ion-icon
-                                                name="logo-pinterest"></ion-icon>
-                                        </a>
-                                    </li>
-                                </ul>
-
-                                <img
-                                    style="margin-top: 10px; line-height: 26px"
-                                    src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/thongbao.png"
-                                    alt />
-                            </ul>
-
-                            <ul class="footer-list">
-                                <li>
-                                    <p class="footer-list-title2">
-                                        <a href="#">Hỗ Trợ Khách Hàng</a>
-                                    </p>
-                                </li>
-
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Hướng dẫn mua hàng</a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Chính sách đổi trả và bảo hành</a>
-                                </li>
-
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Chính sách thanh toán</a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Điều khoản trang Web</a>
-                                </li>
-                                <li class="contact-item">
-                                    <a href="#" class="contact-link">
-                                        Chính sách bảo về thông tin người tiêu
-                                        dùng</a>
-                                </li>
-                            </ul>
-                        </div>
+                        <img
+                            style="width: 100px; height: 20px; margin-left: 15px"
+                            src="https://images.dmca.com/Badges/dmca-badge-w100-5x1-08.png?ID=9bda31ca-31ab-4a2d-b9df-8bced834801e"
+                            alt />
                     </div>
 
-                    <div class="footer-bottom">
-                        <div class="container">
-                            <p class="copyright">
-                                &copy;
-                                <a href="#" class="copyright-link">Bản quyền
-                                    thuộc về
-                                    Authentic Shoes</a>
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title2">
+                                <a href="#">Về Chúng Tôi</a>
                             </p>
-                        </div>
-                    </div>
-                </footer>
+                        </li>
 
-                <!-- icon cuối trang -->
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Giới Thiệu</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Tuyển Dụng</a>
+                        </li>
 
-                <a
-                    href="#top"
-                    class="back-top-btn"
-                    aria-label="Nhắn tin đến chúng tôi"
-                    data-back-top-btn>
-                    <i class="fa-brands fa-facebook-messenger"></i>
-                </a>
-                <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-                    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-                    crossorigin="anonymous"></script>
-                <script
-                    src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-                    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-                    crossorigin="anonymous"></script>
-                <script
-                    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-                    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-                    crossorigin="anonymous"></script>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Dịch Vụ Spa, Sửa
+                                Giày</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Tin Tức - Sự
+                                Kiện</a>
+                        </li>
 
-                <script src="./assets/js/script.js" defer></script>
+                        <li>
+                            <p class="footer-list-title2">
+                                <a href="#">Kết Nối Với Chúng Tôi</a>
+                            </p>
+                        </li>
+                        <ul class="social-list">
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-facebook"></ion-icon>
+                                </a>
+                            </li>
 
-                <script
-                    type="module"
-                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-                <script
-                    nomodule
-                    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-            </body>
-        </html>
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-twitter"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-youtube"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-tiktok"></ion-icon>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="social-link">
+                                    <ion-icon name="logo-pinterest"></ion-icon>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <img
+                            style="margin-top: 10px; line-height: 26px"
+                            src="https://cdn.authentic-shoes.com/wp-content/uploads/2023/04/thongbao.png"
+                            alt />
+                    </ul>
+
+                    <ul class="footer-list">
+                        <li>
+                            <p class="footer-list-title2">
+                                <a href="#">Hỗ Trợ Khách Hàng</a>
+                            </p>
+                        </li>
+
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Hướng dẫn mua
+                                hàng</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link">
+                                Chính sách đổi trả và bảo hành</a>
+                        </li>
+
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Chính sách thanh
+                                toán</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link"> Điều khoản trang
+                                Web</a>
+                        </li>
+                        <li class="contact-item">
+                            <a href="#" class="contact-link">
+                                Chính sách bảo về thông tin người tiêu dùng</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="copyright">
+                        &copy;
+                        <a href="#" class="copyright-link">Bản quyền thuộc về
+                            Authentic Shoes</a>
+                    </p>
+                </div>
+            </div>
+        </footer>
+
+        <!-- icon cuối trang -->
+
+        <a
+            href="#top"
+            class="back-top-btn"
+            aria-label="Nhắn tin đến chúng tôi"
+            data-back-top-btn>
+            <i class="fa-brands fa-facebook-messenger"></i>
+        </a>
+
+        <!-- Script -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
+
+        <script src="./assets/js/script.js" defer></script>
+
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>

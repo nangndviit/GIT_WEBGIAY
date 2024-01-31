@@ -1,8 +1,8 @@
-'use strict';
+// 'use strict';
 
-/**
- * add event on element
- */
+// /**
+//  * add event on element
+//  */
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
@@ -17,24 +17,6 @@ const addEventOnElem = function (elem, type, callback) {
 /**
  * navbar toggle
  */
-
-const navToggler = document.querySelector("[data-nav-toggler]");
-const navbar = document.querySelector("[data-navbar]");
-const navbarLinks = document.querySelectorAll("[data-nav-link]");
-
-const toggleNavbar = function () {
-  navbar.classList.toggle("active");
-  navToggler.classList.toggle("active");
-}
-
-addEventOnElem(navToggler, "click", toggleNavbar);
-
-const closeNavbar = function () {
-  navbar.classList.remove("active");
-  navToggler.classList.remove("active");
-}
-
-addEventOnElem(navbarLinks, "click", closeNavbar);
 
 /**
  * active header when window scroll down to 100px
@@ -57,46 +39,22 @@ addEventOnElem(window, "scroll", activeElemOnScroll);
 
 
 
-let list = document.querySelector('.slider .move');
-let items = document.querySelectorAll('.slider .move .move_sli');
-let dots = document.querySelectorAll('.slider .dots li');
-let prev = document.getElementById('prev');
-let next = document.getElementById('next');
 
-let dot_sli = 0;
-let lengthItems = items.length - 1;
+// sidebar moblie
+const menuOpen = document.querySelector(".menu--open")
+const menuClose = document.querySelector(".menu--close")
+const menu = document.querySelector(".navbar2")
+const body = document.querySelector("body")
 
-next.onclick = function () {
-  if (dot_sli + 1 > lengthItems) {
-    dot_sli = 0;
-  } else {
-    dot_sli = dot_sli + 1;
-  }
-  reloadSlider();
-}
-prev.onclick = function () {
-  if (dot_sli - 1) {
-    dot_sli = lengthItems;
-  } else {
-    dot_sli = dot_sli - 1;
-  }
-  reloadSlider();
-}
-
-let refreshSlider = setInterval(() => { next.click() }, 5000);
-
-function reloadSlider() {
-  let checkLeft = items[dot_sli].offsetLeft;
-  list.style.left = -checkLeft + 'px';
-
-  clearInterval(refreshSlider);
-  refreshSlider = setInterval(() => { next.click() }, 5000);
-
-}
-
-dots.forEach((li, key) => {
-  li.addEventListener('click', function () {
-    dot_sli = key;
-    reloadSlider();
-  })
+menuOpen.addEventListener("click", function() {
+  menu.classList.add("menu--active")
+  menuClose.classList.add("show")
+  body.classList.add("body--disable")
 })
+
+menuClose.addEventListener("click", function() {
+  menu.classList.remove("menu--active")
+  menuClose.classList.remove("show")
+  body.classList.remove("body--disable")
+})
+
