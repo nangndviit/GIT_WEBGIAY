@@ -334,6 +334,29 @@ body {
 /*-----------------------------------*\
   #HEADER
 \*-----------------------------------*/
+/* 
+.header__top {
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  margin-bottom: 200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__top__left {
+  color: #fff;
+  font-size: 12px;
+  margin-left: 320px;
+}
+
+.header__top__right {
+  color: #fff;
+  font-size: 12px;
+  margin-right: 330px; 
+} */
 
 .action-btn.user {
   display: none;
@@ -364,7 +387,6 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 5px;
   width: 100%;
   height: 80px;
   background-color: var(--white);
@@ -380,7 +402,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 30px;
 }
 
 .nav-toggle-btn {
@@ -460,6 +481,7 @@ body {
 }
 
 .navbar-link i {
+  color: #979797;
   margin-left: 5px;
 }
 
@@ -742,7 +764,7 @@ body {
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background-color: #d4d4d4;
+  background-color: #f4f4f4;
 }
 
 .bran__image {
@@ -966,61 +988,6 @@ body {
   max-width: max-content;
 }
 
-/* SERVICE */
-
-.service .img {
-  margin-inline: auto;
-  margin-block-end: 30px;
-}
-
-.service .section-title {
-  margin-block-end: 60px;
-}
-
-.service-card {
-  text-align: center;
-}
-
-.service-card .card-icon {
-  max-width: max-content;
-  margin-inline: auto;
-}
-
-.service-card .card-title {
-  margin-block: 10px;
-}
-
-.service-card .card-text {
-  color: var(--spanish-gray);
-}
-
-/* CTA */
-
-.cta {
-  background-position: 75%;
-}
-
-.cta-banner {
-  display: none;
-}
-
-.cta-content {
-  padding-block: 40px var(--section-padding);
-}
-
-.cta .section-title {
-  text-align: left;
-  margin-block: 10px 20px;
-}
-
-.cta .section-text {
-  margin-block-end: 30px;
-}
-
-.cta .btn:is(:hover, :focus) {
-  background-color: var(--white);
-  color: var(--black);
-}
 
 /*-----------------------------------*\
   #BACK TO TOP
@@ -1030,21 +997,16 @@ body {
   position: fixed;
   width: 50px;
   height: 50px;
-  bottom: 10px;
+  bottom: 30px;
   right: 30px;
   background-color: rgb(7, 90, 185);
   color: var(--white);
   font-size: 25px;
-  padding: 10px;
-  border-radius: 50%;
-  box-shadow: var(--shadow-2);
-  opacity: 0;
-  visibility: hidden;
-  transition: var(--transition-1);
-  z-index: 4;
-  display: flex;
-  justify-items: center;
+  padding-top: 7px;
+  padding-left: 12px;
+  justify-content: center;
   align-items: center;
+  border-radius: 50%;
 }
 
 .back-top-btn.active {
@@ -1070,7 +1032,7 @@ body {
   color: #00000049;
   font-size: 22px;
   display: none;
-  z-index: 11;
+  z-index: 0;
 }
 
 .navbar2 {
@@ -1099,7 +1061,7 @@ body {
   font-weight: bold;
   color: black;
   font-size: 13px;
-  padding: 15px 15px 15px 20px;
+  padding: 15px 0;
   border-top: 1px solid #e4e4e4;
 }
 
@@ -1139,16 +1101,16 @@ body {
 
 .search-box {
   position: relative;
-  padding: 40px 20px 20px 20px;
+  padding: 40px 10px 20px 10px;
 }
 
 input[type="text"] {
   width: 100%;
   height: 40px;
-  padding: 5px 10px 5px 20px;
+  padding: 10px 10px;
   border: 1px solid #ccc;
-  border-radius: 50px;
-  background-color: #acacac;
+  border-radius: 99px;
+  background-color: #f0f0f0;
 }
 
 .but-search {
@@ -1164,7 +1126,6 @@ input[type="text"] {
 /*-----------------------------------*\
   #MEDIA QUERIES
 \*-----------------------------------*/
-
 
 @media (max-width: 450px) {
 
