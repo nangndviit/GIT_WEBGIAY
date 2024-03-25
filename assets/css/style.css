@@ -783,7 +783,6 @@ body {
 }
 
 /* tin tuc su kien */
-
 .new__list {
   width: 100%;
   display: flex;
@@ -799,8 +798,8 @@ body {
   align-items: center;
 }
 
-.new__list div:not(:first-child) {
-  display: block;
+.new__item:nth-child(n+4) {
+  display: none; /* Hide items from the fourth onwards */
 }
 
 .new__top {
@@ -833,6 +832,7 @@ body {
 .new__name p {
   padding: 5px;
 }
+
 
 /*-----------------------------------*\
   #FOOTER
